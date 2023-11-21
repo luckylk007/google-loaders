@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      @keyframes bounce {
+        from {
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          transform: translate3d(0, 50px, 0);
+        }
+      }
+      /* Prefix Support */
+
+      first-div {
+        -webkit-animation-name: bounce;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        -webkit-animation-iteration-count: infinite;
+      }
+
+      @-webkit-keyframes bounce {
+        from {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          -webkit-transform: translate3d(0, 100px, 0);
+          transform: translate3d(0, 100px, 0);
+        }
+      }
+
+      .loader-test {
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(305, 305, 305);
+      }
+      .second-divison {
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(305, 305, 305);
+      }
+
+      .first-div {
+        height: 30px;
+        width: 30px;
+        background-color: #008ae5;
+        border-radius: 100px;
+        margin: 8px;
+        animation: bounce 0.8s;
+        animation-delay: 300ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+      }
+
+      .second-div {
+        height: 30px;
+        width: 30px;
+        background-color: #e60000;
+        border-radius: 100px;
+        margin: 8px;
+        animation: bounce 0.8s;
+        animation-delay: 400ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+      }
+
+      .third-div {
+        height: 30px;
+        width: 30px;
+        background-color: #ffcc00;
+        border-radius: 100px;
+        margin: 8px;
+        animation: bounce 0.8s;
+        animation-delay: 600ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+      }
+
+      .fourth-div {
+        height: 30px;
+        width: 30px;
+        background-color: #008800;
+        border-radius: 100px;
+        margin: 8px;
+        animation: bounce 0.8s;
+        animation-delay: 800ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+      }
+
+      .subdiv {
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .animation1 {
+        height: 30px;
+        width: 30px;
+        background-color: #008ae5;
+        border-radius: 100px;
+        margin: 8px;
+        animation: zoom-in-zoom-out 1s ease infinite;
+        animation-delay: 200ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        from {
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          transform: translate3d(0, 50px, 0);
+        }
+      }
+      /* Prefix Support */
+
+      animation1 {
+        -webkit-animation-name: zoom-in-zoom-out;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        -webkit-animation-iteration-count: infinite;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        100% {
+          transform: scale(1.5, 1.5);
+        }
+      }
+
+      .animation2 {
+        height: 30px;
+        width: 30px;
+        background-color: #e60000;
+        border-radius: 100px;
+        margin: 8px;
+        animation: zoom-in-zoom-out 1s ease infinite;
+        animation-delay: 400ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        from {
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          transform: translate3d(0, 50px, 0);
+        }
+      }
+      /* Prefix Support */
+
+      animation2 {
+        -webkit-animation-name: zoom-in-zoom-out;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        -webkit-animation-iteration-count: infinite;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        100% {
+          transform: scale(1.5, 1.5);
+        }
+      }
+
+      .animation3 {
+        height: 30px;
+        width: 30px;
+        background-color: #ffcc00;
+        border-radius: 100px;
+        margin: 8px;
+        animation: zoom-in-zoom-out 1s ease infinite;
+        animation-delay: 600ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        from {
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          transform: translate3d(0, 50px, 0);
+        }
+      }
+      /* Prefix Support */
+
+      animation3 {
+        -webkit-animation-name: zoom-in-zoom-out;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        -webkit-animation-iteration-count: infinite;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        100% {
+          transform: scale(1.5, 1.5);
+        }
+      }
+
+      .animation4 {
+        height: 30px;
+        width: 30px;
+        background-color: #008800;
+        border-radius: 100px;
+        margin: 8px;
+        animation: zoom-in-zoom-out 1s ease infinite;
+        animation-delay: 800ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        from {
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          transform: translate3d(0, 50px, 0);
+        }
+      }
+      /* Prefix Support */
+
+      animation4 {
+        -webkit-animation-name: zoom-in-zoom-out;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+        -webkit-animation-iteration-count: infinite;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        100% {
+          transform: scale(1.5, 1.5);
+        }
+      }
+    </style>
+
+    <script></script>
+  </head>
+  <body>
+    <div class="loader-test">
+      <div class="subdiv" style="display: flex">
+        <div class="first-div"></div>
+        <div class="second-div"></div>
+        <div class="third-div"></div>
+        <div class="fourth-div"></div>
+      </div>
+    </div>
+
+    <div
+      class="second-divison"
+      style="
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+      "
+    >
+      <div class="animation1"></div>
+      <div class="animation2"></div>
+      <div class="animation3"></div>
+      <div class="animation4"></div>
+    </div>
+  </body>
+</html>
